@@ -58,11 +58,10 @@ course/langchain-crash-course/.env
 *.diff
 *.lock
 
-/data
+
 /memory-bank
 .cursorrules
 /course
-vector_db
 
 HackathonChallenges_ToTeams_OnlinePhase_revised (1).pdf
 Introduction to AAOIFI standards v1.2.pdf
