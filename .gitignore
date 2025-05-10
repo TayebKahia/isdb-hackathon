@@ -1,0 +1,63 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.pid
+*.seed
+*.pid.lock
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Environment Files
+notebooks/.env
+course/langchain-crash-course/.env
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Operating System Files
+*.~lock.*
+*.~*
+*.bak
+*.tmp
+*.swp
+*.swo
+*.orig
+*.rej
+*.sublime-*
+
+# Git
+.git/
+*.patch
+*.diff
+*.lock
+
+/data
+/memory-bank
+.cursorrules
+/course
