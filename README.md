@@ -1,19 +1,31 @@
-## Project Overview
+# Islamic Finance Standards AI 🏦 
+
+
+
+[![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/downloads/)
+[![LangChain](https://img.shields.io/badge/LangChain-Powered-green.svg)](https://langchain.com/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-API-orange.svg)](https://openai.com/)
+[![Google](https://img.shields.io/badge/Google-Gemini-red.svg)](https://ai.google.dev/)
+</div>
+
+## 📋 Project Overview
 
 This project aims to leverage artificial intelligence to enhance the adoption, understanding, and application of Islamic finance standards, particularly those established by the Accounting and Auditing Organization for Islamic Financial Institutions (AAOIFI). It was developed as part of a hackathon focused on applying AI to Islamic finance standards.
 
+
+
 The project addresses four challenge categories:
 
-1. **Use Case Scenarios**: Process Islamic finance scenarios and generate accounting treatments aligned with AAOIFI standards
-2. **Reverse Transactions**: Analyze financial entries and identify relevant AAOIFI standards
-3. **Standard Enhancement**: Multi-agent system to review and suggest updates to AAOIFI standards
-4. **QA Bot for AAOIFI Standards**: Interactive question-answering system for Islamic finance standards
+1. **📊 Use Case Scenarios**: Process Islamic finance scenarios and generate accounting treatments aligned with AAOIFI standards
+2. **🔄 Reverse Transactions**: Analyze financial entries and identify relevant AAOIFI standards
+3. **⚙️ Standard Enhancement**: Multi-agent system to review and suggest updates to AAOIFI standards
+4. **🤖 QA Bot for AAOIFI Standards**: Interactive question-answering system for Islamic finance standards
 
-## Setup Instructions
+## 🛠️ Setup Instructions
 
 ### Prerequisites
 
-- Python 3.10+
+- Python 3.11
 - Git
 - OpenAI API key (for some components)
 - Google API key (for Gemini model access)
@@ -22,8 +34,8 @@ The project addresses four challenge categories:
 
 1. Clone this repository:
    ```bash
-   git clone [repository-url]
-   cd [repository-name]
+   git clone https://github.com/TayebKahia/isdb-hackathon.git
+   cd isdb-hackathon
    ```
 
 2. Install the required dependencies:
@@ -31,15 +43,22 @@ The project addresses four challenge categories:
    pip install -r requirements.txt
    ```
 
-3. Create a `.env` file in the project root with your API keys:
+3. Create 2 separate `.env` files:
+   
+   First one in notebooks folder with your API key:
    ```
    OPENAI_API_KEY=your_openai_api_key
+   ```
+   
+   Second one in challenge-4 folder with your API key:
+   ```
    GOOGLE_API_KEY=your_google_api_key
    ```
 
-## Challenge Components and How to Run
+## 🧩 Challenge Components and How to Run
 
-### Challenge 1: Use Case Scenarios (Ijarah MBT Accounting)
+
+### 📊 Challenge 1: Use Case Scenarios (Ijarah MBT Accounting)
 
 This component processes Ijarah Muntahia Bittamleek (lease ending with ownership) scenarios according to AAOIFI standards, extracting financial parameters and generating appropriate journal entries.
 
@@ -48,6 +67,7 @@ This component processes Ijarah Muntahia Bittamleek (lease ending with ownership
    ```bash
    jupyter notebook notebooks/challenge-1.ipynb
    ```
+   **or simply run all the cells**
 2. Execute the cells sequentially to:
    - Extract text from the AAOIFI standards PDFs
    - Create a vector database for retrieval
@@ -56,33 +76,38 @@ This component processes Ijarah Muntahia Bittamleek (lease ending with ownership
 
 The notebook demonstrates processing a sample scenario for Alpha Islamic Bank and performs calculations like Right-of-Use (ROU) asset valuation and journal entry generation.
 
-### Challenge 2: Reverse Transactions
+### 🔄 Challenge 2: Reverse Transactions
 
 This component analyzes journal entries and identifies the relevant AAOIFI Financial Accounting Standards (FAS) that govern such transactions.
+
 
 **To run:**
 1. Open the Jupyter notebook:
    ```bash
    jupyter notebook notebooks/challenge-2-gemini.ipynb
    ```
+   **or simply run all the cells**
 2. Execute the cells to:
    - Load AAOIFI standards into the vector database
    - Analyze sample journal entries
    - Identify applicable standards with confidence scores
    - Generate reasoning for the identified standards
 
-### Challenge 3: Standard Enhancement
+### ⚙️ Challenge 3: Standard Enhancement
 
 This is a multi-agent system that reviews, suggests, and validates updates to AAOIFI standards. The implementation focuses on FAS 10 (Istisna'a and Parallel Istisna'a).
+
+
 
 **To run the analysis:**
 1. Open the Jupyter notebook:
    ```bash
    jupyter notebook notebooks/challenge-3/challenge-3.ipynb
    ```
+   **or simply run all the cells**
 2. Execute the cells to run the multi-agent system
 
-**To view enhancement results:**
+**To use a UI interface:**
 ```bash
 cd notebooks/challenge-3
 streamlit run fas_enhancement_viewer.py
@@ -90,9 +115,11 @@ streamlit run fas_enhancement_viewer.py
 
 This will open an interactive viewer showing the standard enhancement suggestions made by the AI agents.
 
-### Challenge 4: QA Bot for AAOIFI Standards
+### 🤖 Challenge 4: QA Bot for AAOIFI Standards
 
 An interactive question-answering system that uses Retrieval-Augmented Generation (RAG) to answer questions about AAOIFI standards.
+
+
 
 **Terminal interface:**
 ```bash
@@ -108,7 +135,8 @@ python run-streamlit.py
 
 After running the web interface, open your browser at http://localhost:8501 to interact with the QA bot.
 
-## Project Structure
+
+## 📂 Project Structure
 
 ```
 ISDB/
@@ -133,15 +161,19 @@ ISDB/
     └── standards_reverse_transactions_gemini/  # For Challenge 2
 ```
 
-## Key Features
+## 🌟 Key Features
 
-- **Retrieval-Augmented Generation (RAG)** for accurate standard retrieval and application
-- **Financial calculation components** for Ijarah MBT accounting
-- **Multi-agent architecture** for standard enhancement
-- **Interactive interfaces** for exploring and querying standards
-- **Vector databases** for efficient semantic search of standards
+- **🔍 Retrieval-Augmented Generation (RAG)** for accurate standard retrieval and application
+- **🧮 Financial calculation components** for Ijarah MBT accounting
+- **🤖 Multi-agent architecture** for standard enhancement
+- **🖥️ Interactive interfaces** for exploring and querying standards
+- **🗄️ Vector databases** for efficient semantic search of standards
 
-## Limitations and Future Work
+## 📊 System Performance
+
+
+
+## ⚠️ Limitations and Future Work
 
 - Some complex tables and diagrams in standards may not be fully captured
 - Arabic text handling may require additional refinement
@@ -149,12 +181,12 @@ ISDB/
 - The system could be expanded to cover more standards and financial scenarios
 - A unified web interface could integrate all four challenge components
 
-## License
 
-[Specify license information]
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
+- Islamic Development Bank for organizing the hackathon 
+- The hackthon's managing team
+- OpenAI and Google for providing powerful language models
 - AAOIFI for establishing the standards used in this project
 - LangChain community for the framework and tools
-- [Hackathon organizers and other acknowledgments] 
