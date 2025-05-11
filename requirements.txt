@@ -1,0 +1,46 @@
+# Core packages
+python-dotenv>=1.0.0
+langchain>=0.1.0
+langchain-core>=0.1.10
+langchain-community>=0.0.13
+langchain-chroma>=0.0.6
+langchain-google-genai>=0.0.5
+langchain-openai>=0.0.5
+
+# Vector database and embeddings
+chromadb>=0.4.22
+sentence-transformers>=2.2.2
+huggingface-hub>=0.19.4
+transformers>=4.38.0
+
+# Document processing
+pdfplumber>=0.10.3
+pypdf>=3.17.1
+textract>=1.6.5
+nltk>=3.8.1
+
+# Web interface
+streamlit>=1.32.0
+streamlit-chat>=0.1.1
+
+# API interactions
+openai>=1.10.0
+google-generativeai>=0.3.0
+tiktoken>=0.5.1
+
+# Data processing
+pandas>=2.1.0
+numpy>=1.26.0
+matplotlib>=3.8.0
+plotly>=5.18.0
+
+# Utilities
+tqdm>=4.66.1
+pytz>=2023.3
+requests>=2.31.0
+beautifulsoup4>=4.12.2
+python-slugify>=8.0.1
+
+# Jupyter notebooks
+ipykernel>=6.25.2
+ipywidgets>=8.1.1
